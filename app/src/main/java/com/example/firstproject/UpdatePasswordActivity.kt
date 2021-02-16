@@ -32,8 +32,6 @@ class UpdatePasswordActivity : AppCompatActivity() {
         back.setOnClickListener{
             finish()
         }
-
-        System.out.println("Hello");
         changePasswordBtn.setOnClickListener{
             var password: String = passwordEt.text.toString()
             if (TextUtils.isEmpty(password)) {
