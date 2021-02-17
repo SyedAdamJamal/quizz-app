@@ -15,14 +15,20 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
+    private lateinit var name: EditText
+
     private lateinit var logoutBtn: Button
     private lateinit var updatePass: Button
+    private lateinit var startBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
+        startBtn = findViewById(R.id.btn_start)
+        name = findViewById(R.id.name)
 
         auth = FirebaseAuth.getInstance()
 
@@ -50,6 +56,17 @@ class MainActivity : AppCompatActivity() {
         updatePass.setOnClickListener{
             val intent = Intent(this, UpdatePasswordActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    fun start(view: View) {
+        if(name.text.toString().isEmpty()){
+            Toast.makeText(this, "Please enter your name", Toast.LENGTH_LONG).show()
+        }
+        else{
+            val intent = Intent(this, QuizQuestionActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
