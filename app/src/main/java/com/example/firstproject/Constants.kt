@@ -9,10 +9,10 @@ object Constants{
         val que1 = Question(1,
             "What country does this flag belong to?",
             R.drawable.background,
-            "Jhonny Sins",
-            "Mia Khalifa",
-            "Daisy Stone",
-            "Lana Rhoades",
+            "Pakistan",
+            "Afghanistan",
+            "Iran",
+            "China",
             1)
         questionsList.add(que1)
 
@@ -20,10 +20,10 @@ object Constants{
         val que2 = Question(2,
             "What country does this flag belong to?",
             R.drawable.background,
-            "Jhonny Sins",
-            "Mia Khalifa",
-            "Daisy Stone",
-            "Lana Rhoades",
+            "Pakistan",
+            "Afghanistan",
+            "Iran",
+            "China",
             1)
         questionsList.add(que2)
 
@@ -31,10 +31,10 @@ object Constants{
         val que3 = Question(3,
             "What country does this flag belong to?",
             R.drawable.background,
-            "Jhonny Sins",
-            "Mia Khalifa",
-            "Daisy Stone",
-            "Lana Rhoades",
+            "Pakistan",
+            "Afghanistan",
+            "Iran",
+            "China",
             1)
         questionsList.add(que3)
 
@@ -42,10 +42,10 @@ object Constants{
         val que4 = Question(4,
             "What country does this flag belong to?",
             R.drawable.background,
-            "Jhonny Sins",
-            "Mia Khalifa",
-            "Daisy Stone",
-            "Lana Rhoades",
+            "Pakistan",
+            "Afghanistan",
+            "Iran",
+            "China",
             1)
         questionsList.add(que4)
 
@@ -53,10 +53,10 @@ object Constants{
         val que5 = Question(5,
             "What country does this flag belong to?",
             R.drawable.background,
-            "Jhonny Sins",
-            "Mia Khalifa",
-            "Daisy Stone",
-            "Lana Rhoades",
+            "Pakistan",
+            "Afghanistan",
+            "Iran",
+            "China",
             1)
         questionsList.add(que5)
 

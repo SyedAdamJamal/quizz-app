@@ -8,7 +8,6 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 
 
 class MainActivity : AppCompatActivity() {
@@ -59,14 +58,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun start(view: View) {
-        if(name.text.toString().isEmpty()){
-            Toast.makeText(this, "Please enter your name", Toast.LENGTH_LONG).show()
-        }
-        else{
-            val intent = Intent(this, QuizQuestionActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+    fun start(View: View) {
+        val intent = Intent(this, QuizQuestionActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
