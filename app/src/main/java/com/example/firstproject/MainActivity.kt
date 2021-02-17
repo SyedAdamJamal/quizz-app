@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
         auth = FirebaseAuth.getInstance()
 
         if(auth.currentUser == null){
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         else{
-            Toast.makeText(this, "Already logged in", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Login Successfully", Toast.LENGTH_LONG).show()
         }
 
         setContentView(R.layout.activity_main)
